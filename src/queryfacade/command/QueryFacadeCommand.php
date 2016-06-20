@@ -152,7 +152,7 @@ class QueryFacadeCommand extends Command{
                     break;
                 default:
                     $sender->sendMessage("Usage: /queryfacade <sub-command> [parameters]");
-                    return false;
+                    break;
             }
         }
         else{
