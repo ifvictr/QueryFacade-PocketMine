@@ -1,0 +1,36 @@
+#Configuration file for QueryFacade v1.1.0
+apply:
+#Everything that is set to true will be sent, if set to false, that cloak will be disabled and real data will be sent
+ level: true
+ maxPlayerCount: true
+ playerCount: true
+ playerList: true
+ plugins: true
+combine: false
+#Set to true to allow query data to be combined with other servers
+level: "world"
+#Sets the world name sent in a query
+maxPlayerCount: 20
+#Sets the max player count sent in a query
+playerCount: 20
+#Sets the player count sent in a query, try not to abuse this, or bad things might happen
+playerList:
+#Sets the players that will be "online", format: "name;ipAddress;portNumber"
+- "Gamecrafter;0.0.0.0;19132"
+- "notch;0.0.0.0;19132"
+- "shoghicp;0.0.0.0;19132"
+- "Steve;0.0.0.0;19132"
+plugins:
+#Sets the plugins that will be "installed", format: "name;versionString"
+- "DoMath;1.0.0"
+- "PHPUtils;1.0.0"
+- "QueryFacade;1.0.0"
+- "RestartMe;1.2.0"
+servers:
+#Fetchs data from all the servers specified, if they are valid and the have query turned on, and combine is set to true
+- "example.com:19132"
+- "example.com:19133"
+- "example.com:19134"
+- "example.com:19135"
+timeout: 3
+#Sets the timeout in seconds, if it takes longer than the timeout to query a server, the plugin will assume the server is offline
