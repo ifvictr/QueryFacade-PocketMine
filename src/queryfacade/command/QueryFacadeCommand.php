@@ -35,7 +35,7 @@ class QueryFacadeCommand extends Command{
         ];
         $sender->sendMessage("QueryFacade commands:");
         foreach($commands as $name => $description){
-            $sender->sendMessage("/queryfacade ".$name.": ".$description);
+            $sender->sendMessage("/queryfacade $name: $description");
         }
     }
     /**
